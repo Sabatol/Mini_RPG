@@ -6,7 +6,7 @@ class Game < HumanPlayer
   # Initialise une partie avec un nom, va chercher 4 ennemis aléatoires parmi la liste
   def initialize(name)
     @name = name
-    enemies_name = ["Florian", "Chris", "Philibert", "David", "Jean-Marc", "Killian", "John", "Jean-Morray", "Francine", "Yvette", "Honoré"]
+    enemies_name = ["Florian", "Laurox dorée", "Cyprien", "Romain", "Nico", "Chris", "Philibert", "David", "Jean-Marc", "Killian", "John", "Jean-Morray", "Francine", "Yvette", "Honoré"]
     $enemies = enemies_name.sample(4).map!{|enemi_name| Player.new(enemi_name)}
     @user = HumanPlayer.new(name)
   end
@@ -37,7 +37,7 @@ class Game < HumanPlayer
     puts
     puts "s - chercher à se soigner" 
     puts
-    puts "attaquer un joueur en vue :"
+    puts "Ou attaquer un joueur en vue :"
     puts
       $enemies.each do |enemi|
         if enemi.life_points != 0

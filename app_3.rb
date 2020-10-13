@@ -9,10 +9,10 @@ puts
 puts "Bienvenue dans le mini jeu POO !"
 puts "   
         |>>>                                                      |>>>
-        |                     |>>>          |>>>                  |
-        *                     |              |                    *
-     /  |                    *              *                  /  |
-    /___|                 _/  |           /  |_               /___|
+        |                     |>>>           |>>>                 |
+        *                     |            * |                  / *
+     /  |                    *|           /  |                 /  |
+    /___|                 _/  |          /   |_               /___|
     [   ]                |/   |_________/    ||               [   ]
     [ I ]                /     |       /      |               [ I ]
     [   ]_ _ _          /       |     /        |         _ _ _[   ]
@@ -37,6 +37,7 @@ player_name = gets.chomp
 my_game = Game.new(player_name)
 
 while my_game.is_still_ongoing? == true
+  puts
   my_game.show_players
   suspens = gets.chomp
   my_game.menu

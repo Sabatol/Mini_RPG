@@ -43,7 +43,7 @@ class Player
     end
   end
 
- # Méthode pour calculer les dégats (ici, aléatoire entre 1 et 6)
+  # Méthode pour calculer les dégats (ici, aléatoire entre 1 et 6)
   def compute_damage
     return rand(1..6)
   end 

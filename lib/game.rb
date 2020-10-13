@@ -117,7 +117,7 @@ class Game < HumanPlayer
     puts "              La partie est TERMINEE !"
     puts "--------------------------------------------------------"
     puts
-    puts "##############PRESS ENTER TO CONTINUE###################"
+    puts "###############PRESS ENTER TO CONTINUE##################"
     suspens = gets.chomp
     if @user.life_points > 0
       puts 
@@ -142,7 +142,6 @@ class Game < HumanPlayer
                                 ¶¶¶¶¶¶¶¶¶¶¶"
       puts
     else 
-      puts "|==========================GAME OVER===========================|"
       puts
       puts
       puts "               
@@ -170,6 +169,9 @@ class Game < HumanPlayer
     puts
     puts
     puts "Boh, t'as essayé au moins..."
+    puts
+    puts
+    puts "|==========================GAME OVER===========================|"
     end
   end
 

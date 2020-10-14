@@ -115,12 +115,12 @@ class Game < HumanPlayer
       @user.search_weapon
     elsif action == "s"
       @user.search_health_pack    
-    #elsif action.kind_of? Integer == true
+    #elsif action.class == Integer  
     else  
       @user.attacks($enemies_in_sight[action.to_i])
       try_to_kill($enemies_in_sight[action.to_i])
-    
-    #  puts "Tant pis pour toi, fais attention à ce que tu écris parce que là, tu perds un tour à te faire marrave gratos !"
+   
+    #puts "Tant pis pour toi, fais attention à ce que tu écris parce que là, tu perds un tour à te faire marrave gratos !"
     end
   end
 
